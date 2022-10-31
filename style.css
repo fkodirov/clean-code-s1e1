@@ -22,7 +22,7 @@ body {
   .header {
     text-align: center;
   }
-  
+
 }
 
 .wrapper {
@@ -34,7 +34,7 @@ body {
 .add-item-input, .item-label, .item-input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .add-item{
   margin: 16px 0;
@@ -138,7 +138,7 @@ body {
 }
 
 .item-input {
-  width: 226px
+  width: 226px;
 }
 
 .button-delete-img {
@@ -153,17 +153,18 @@ body {
 
 /* Completed */
 .completed-list .item-label {
-  text-decoration: line-through color: #888;
+  text-decoration: line-through; 
+  color: #888;
 }
 
 /* Edit Task */
 .item-input {
-  display: none
+  display: none;
 }
 
 .item-edit .item-input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .item-edit .item-label {
