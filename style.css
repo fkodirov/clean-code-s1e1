@@ -31,12 +31,15 @@ body {
   margin: 0 auto 0;
 }
 
-.add-item-input, .item-label, .item-input {
+.add-item-input,
+.item-label,
+.item-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.add-item{
+
+.add-item {
   margin: 16px 0;
 }
 
@@ -44,22 +47,31 @@ body {
   display: flex;
 }
 
-.todo-list, .completed-list {
+.todo-list,
+.completed-list {
   margin: 0;
   padding: 0px;
 }
 
-.todo-list, .completed-list,
-.todo-title, .completed-title{
+.todo-list,
+.completed-list,
+.todo-title,
+.completed-title {
   list-style: none;
 }
 
-.add-item-input, .item-checkbox, .item-input,
-.add-item-button, .button-edit, .button-delete {
+.add-item-input,
+.item-checkbox,
+.item-input,
+.add-item-button,
+.button-edit,
+.button-delete {
   outline: none;
 }
 
-.add-item-button, .button-edit, .button-delete {
+.add-item-button,
+.button-edit,
+.button-delete {
   background: none;
   border: 0px;
   color: #888;
@@ -69,12 +81,16 @@ body {
   cursor: pointer;
 }
 
-.add-item-button:hover, .button-edit:hover, .button-delete:hover {
+.add-item-button:hover,
+.button-edit:hover,
+.button-delete:hover {
   color: #3a3A3a;
 }
 
 /* Heading */
-.add-item-title, .todo-title, .completed-title{
+.add-item-title,
+.todo-title,
+.completed-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,7 +100,8 @@ body {
   text-transform: uppercase;
 }
 
-.add-item-input, .item-input {
+.add-item-input,
+.item-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,7 +114,8 @@ body {
   color: #888;
 }
 
-.add-item-input:focus, .item-input:focus {
+.add-item-input:focus,
+.item-input:focus {
   color: #333;
 }
 
@@ -122,7 +140,11 @@ body {
   align-items: center;
 }
 
-.item-checkbox, .item-label, .item-input, .button-edit, .button-delete {
+.item-checkbox,
+.item-label,
+.item-input,
+.button-edit,
+.button-delete {
   vertical-align: middle;
 }
 
@@ -153,7 +175,7 @@ body {
 
 /* Completed */
 .completed-list .item-label {
-  text-decoration: line-through; 
+  text-decoration: line-through;
   color: #888;
 }
 
