@@ -6,27 +6,36 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="aaa"><img src="./eisenhower-matrix.jpg">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="centered-main-page-element">
-    <p id="topsectionforaddingelementtolist"><label for="new-task">Add Item</label>
-      <div class="task-row-wrapper"><input id="new-task" class="task" type="text"><button>Add</button></div>
-    </p>
-    <h3>Todo</h3>
-    <ul id="incompleteTasks">
-      <li><input type="checkbox"><label class="task">Pay Bills</label><input type="text" class="task">
-        <button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-      <li class="editmode"><input type="checkbox"><label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task">
-        <button class="edit">Save</button><button class="delete"><img src="./remove.svg"></button></li>
-    </ul>
-    <h3>Completed</h3>
-    <ul id="completed-tasks">
-      <li><input type="checkbox" checked><label class="task">See the Doctor</label>
-        <input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-    </ul>
-  </div>
+  <header class="wrapper header"><img src="./eisenhower-matrix.jpg" class="header-img">
+    <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
+  <main class="wrapper">
+    <section class="add-item">
+      <h3 class="add-item-title">Add Item</h3>
+      <div class="add-item-inner">
+        <input class="add-item-input" type="text">
+        <button class="add-item-button">Add</button>
+      </div>
+    </section>
+    <section class="todo">
+      <h3 class="todo-title">Todo</h3>
+      <ul class="todo-list">
+        <li class="todo-item item">
+          <input class="item-checkbox" type="checkbox"><label class="item-label">Pay Bills</label><input type="text" class="item-input">
+          <button class="button-edit">Edit</button><button class="button-delete"><img src="./remove.svg" class="button-delete-img"></button></li>
+        <li class="todo-item item item-edit"><input class="item-checkbox" type="checkbox"><label class="item-label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="item-input">
+          <button class="button-edit">Save</button><button class="button-delete"><img src="./remove.svg" class="button-delete-img"></button></li>
+      </ul>
+    </section>
+    <section class="completed">
+      <h3 class="completed-title">Completed</h3>
+      <ul class="completed-list">
+        <li class="completed-item item"><input class="item-checkbox" type="checkbox" checked><label class="item-label">See the Doctor</label>
+          <input type="text" class="item-input"><button class="button-edit">Edit</button><button class="button-delete"><img src="./remove.svg" class="button-delete-img"></button></li>
+      </ul>
+    </section>  
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
