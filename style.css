@@ -9,16 +9,16 @@ body {
   text-align: right;
 }
 
-header img {
+.header-img {
   width: 100%;
 }
 
-header .more-info {
+.more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  header {
+  .header {
     text-align: center;
   }
 }
@@ -42,22 +42,22 @@ header .more-info {
   display: flex;
 }
 
-ul {
+.todo-list, .completed-list {
   margin: 0;
   padding: 0px;
 }
 
-li,
-h3 {
+.todo-list, .completed-list,
+.todo-title, .completed-title{
   list-style: none;
 }
 
-input,
-button {
+.add-item-input, .item-checkbox, .item-input,
+.add-item-button, .button-edit, .button-delete {
   outline: none;
 }
 
-button {
+.add-item-button, .button-edit, .button-delete {
   background: none;
   border: 0px;
   color: #888;
@@ -67,12 +67,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.add-item-button:hover, .button-edit:hover, .button-delete:hover {
   color: #3a3A3a;
 }
 
 /* Heading */
-h3{
+.add-item-title, .todo-title, .completed-title{
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -82,7 +82,7 @@ h3{
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.add-item-input, .item-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -95,7 +95,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.add-item-input:focus, .item-input:focus {
   color: #333;
 }
 
@@ -150,7 +150,7 @@ input[type="text"]:focus {
 }
 
 /* Completed */
-ul.completed-list label {
+.completed-list .item-label {
   text-decoration: line-through color: #888;
 }
 
@@ -159,11 +159,11 @@ ul.completed-list label {
   display: none
 }
 
-li.item-edit .item-input {
+.item-edit .item-input {
   display: inline-block;
   width: 224px
 }
 
-ul li.item-edit label {
+.item-edit .item-label {
   display: none;
 }
